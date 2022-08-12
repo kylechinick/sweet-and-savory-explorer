@@ -52,13 +52,15 @@ namespace SweetAndSavoryExplorer.Controllers
     {
       var thisTreat = _db.Treats
           .Include(treat => treat.JoinEntities)
-          .ThenInclude(join => join.Treat)
+          .ThenInclude(join => join.Flavor)
           .FirstOrDefault(treat => treat.TreatId == id);
       return View(thisTreat);
     }
+    
     public ActionResult Edit(int id)
     {
       var thisTreat = _db.Treats.FirstOrDefault(treat => treat.TreatId == id);
+      ViewBag.FlavorId = new SelectList(_db.Flavors, "FlavorId", "Name");
       return View(thisTreat);
     }
 

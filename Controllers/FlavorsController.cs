@@ -56,9 +56,11 @@ namespace SweetAndSavoryExplorer.Controllers
           .FirstOrDefault(flavor => flavor.FlavorId == id);
       return View(thisFlavor);
     }
+
     public ActionResult Edit(int id)
     {
       var thisFlavor = _db.Flavors.FirstOrDefault(flavor => flavor.FlavorId == id);
+      ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "Name");
       return View(thisFlavor);
     }
 
@@ -91,6 +93,7 @@ namespace SweetAndSavoryExplorer.Controllers
       ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "Name");
       return View(thisFlavor);
     }
+
     [HttpPost]
     public ActionResult AddTreat(Flavor flavor, int TreatId)
     {
@@ -101,6 +104,7 @@ namespace SweetAndSavoryExplorer.Controllers
       }
       return RedirectToAction("Index");
     }
+
     [HttpPost]
     public ActionResult DeleteTreat(int joinId)
     {

@@ -11,7 +11,7 @@ using SweetAndSavoryExplorer.Models;
 namespace SweetAndSavoryExplorer.Migrations
 {
     [DbContext(typeof(SweetAndSavoryExplorerContext))]
-    [Migration("20220812170330_Initial")]
+    [Migration("20220812212506_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
