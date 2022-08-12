@@ -24,6 +24,7 @@ namespace SweetAndSavoryExplorer.Controllers
       _db = db;
     }
 
+    [AllowAnonymous]
     public ActionResult Index()
     {
       List<Treat> model = _db.Treats.ToList();
@@ -46,6 +47,7 @@ namespace SweetAndSavoryExplorer.Controllers
       return RedirectToAction("Index");
     }
 
+    [AllowAnonymous]
     public ActionResult Details(int id)
     {
       var thisTreat = _db.Treats
