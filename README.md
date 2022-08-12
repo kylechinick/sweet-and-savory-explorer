@@ -2,7 +2,7 @@
 
 Author: _**Kyle Chinick**_
 
-Marketing app that showcases the flavors and treats of Pierre's Sweet and Savory Treats business. This MVC app uses many-to-many relationtionships with login functionlity to manage user access to editing features.
+Marketing app that showcases the flavors and treats of Pierre's Sweet and Savory Treats business. This MVC app uses many-to-many relationships with login functionality to manage user access to editing features.
 
 ---
 
