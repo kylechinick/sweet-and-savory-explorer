@@ -2,30 +2,64 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #0d1b2a;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
-  padding: 1rem;
+  /* padding: 1rem; */
+  min-height: 90vh;
+  background-color: #e0e1dd;
 }
 
 header,
 main,
 section,
 footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 header {
   display: flex;
+  align-items: center;
 }
 
-header > p {
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  font-size: 0.8rem;
+}
+
+header > p,
+footer > p {
   margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.brand-name {
+  font-family: 'Oswald', sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: #415a77;
+}
+a:hover {
+  color: #1b263b;
+}
+a:active {
+  color: #0d1b2a;
 }
 
 form {

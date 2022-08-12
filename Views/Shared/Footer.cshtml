@@ -1,1 +1,18 @@
-@* <div id="footer">Bottom div content</div> *@
+<footer>
+  <p>@Html.ActionLink("Sweet and Savory Explorer", "Index", "Home", null, new
+    {@class = "brand-name"})</p>
+  <div id="footer-links">
+
+  </div>
+
+  </div>
+
+  @if (User.Identity.IsAuthenticated)
+  {
+    <p>@Html.ActionLink("My Account", "Index", "Account")</p>
+  }
+  else
+  {
+    <p>@Html.ActionLink("Log In or Create an Account", "Index", "Account")</p>
+  }
+</footer>

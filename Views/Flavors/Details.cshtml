@@ -4,7 +4,10 @@
 
 @model SweetAndSavoryExplorer.Models.Flavor;
 
-<h1>Flavor Details</h1>
+<section>
+  <h1>Flavor Details</h1>
+  <p>@Html.ActionLink("Back to All Flavors", "Index")</p>
+</section>
 <main>
   <h2>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model =>
     model.Name)</h2>
@@ -16,7 +19,8 @@
   }
   else
   {
-    <h4>Treats the flavor contains:</h4>
+    <h3>Treats have the "@Html.DisplayFor(model =>
+    model.Name)" flavor:</h3>
     <ul>
       @foreach (var join in Model.JoinEntities)
       {
@@ -24,11 +28,12 @@
       }
     </ul>
   }
-  <p>@Html.ActionLink("Add a Treat", "AddTreat", new { id = Model.FlavorId })
-  </p>
-  <p>@Html.ActionLink("Edit Flavor", "Edit", new { id = Model.FlavorId })</p>
-  <p>@Html.ActionLink("Delete Flavor", "Delete", new { id = Model.FlavorId })
-  </p>
+  @if (User.Identity.IsAuthenticated)
+  {
+    <p>@Html.ActionLink("Add a Treat", "AddTreat", new { id = Model.FlavorId })
+    </p>
+    <p>@Html.ActionLink("Edit Flavor", "Edit", new { id = Model.FlavorId })</p>
+    <p>@Html.ActionLink("Delete Flavor", "Delete", new { id = Model.FlavorId })
+    </p>
+  }
 </main>
-
-<p>@Html.ActionLink("Back to flavors", "Index")</p>

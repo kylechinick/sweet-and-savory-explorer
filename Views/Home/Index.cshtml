@@ -5,16 +5,11 @@
 @using System.Security.Claims;
 @using SweetAndSavoryExplorer.Models;
 
-<h1>Welcome to the Sweet and Savory Explorer</h1>
+<section>
+  <h1>Welcome to the Sweet and Savory Explorer</h1>
+</section>
 <main>
-  @if (User.Identity.IsAuthenticated)
-  {
-    <p>Welcome Back @User.Identity.Name!</p>
-  }
-  else
-  {
-    <p>@Html.ActionLink("Log In or Create an Account", "Index", "Account")</p>
-  }
+  <h2>Current Product Lineup</h2>
   <h3>Flavors</h3>
   <ul>
     @foreach (Flavor flavor in ViewBag.Flavors)
@@ -34,6 +29,3 @@
     }
   </ul>
 </main>
-<p>@Html.ActionLink("See all treats", "Index", "Treats")</p>
-<p>@Html.ActionLink("See all flavors", "Index", "Flavors")</p>
-<p>@Html.ActionLink("Create an account", "Index", "Account")</p>
