@@ -55,34 +55,38 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbXMvQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbXMvRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/DeleteAll.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbXMvRGVsZXRlQWxsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbXMvRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbXMvRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSXRlbXMvSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Shared/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Zvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/AddTreat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJlYXRzL0FkZFRyZWF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJlYXRzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJlYXRzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/DeleteAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJlYXRzL0RlbGV0ZUFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJlYXRzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJlYXRzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJlYXRzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

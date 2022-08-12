@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "G5B+vhe6gCsE2O4UbyF7jfgH0tb5ouJlZsydRLxVO64=",
+  "Source": "SweetAndSavoryExplorer",
+  "BasePath": "_content/SweetAndSavoryExplorer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SweetAndSavoryExplorer/wwwroot",
+      "Source": "SweetAndSavoryExplorer",
+      "ContentRoot": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/wwwroot/",
+      "BasePath": "_content/SweetAndSavoryExplorer",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/wwwroot/css/styles.css",
+      "SourceId": "SweetAndSavoryExplorer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/wwwroot/",
+      "BasePath": "_content/SweetAndSavoryExplorer",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/styles.css"
+    }
+  ]
+}
