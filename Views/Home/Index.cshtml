@@ -2,7 +2,38 @@
   Layout = "_Layout";
 }
 
+@using System.Security.Claims;
+@using SweetAndSavoryExplorer.Models;
+
 <h1>Welcome to the Sweet and Savory Explorer</h1>
+<main>
+  @if (User.Identity.IsAuthenticated)
+  {
+    <p>Welcome Back @User.Identity.Name!</p>
+  }
+  else
+  {
+    <p>@Html.ActionLink("Log In or Create an Account", "Index", "Account")</p>
+  }
+  <h3>Flavors</h3>
+  <ul>
+    @foreach (Flavor flavor in ViewBag.Flavors)
+    {
+      <li>@Html.ActionLink($"{flavor.Name}", "Details", "Flavors", new {id =
+      flavor.FlavorId})
+      </li>
+    }
+  </ul>
+  <h3>Treats</h3>
+  <ul>
+    @foreach (Treat treat in ViewBag.Treats)
+    {
+      <li>@Html.ActionLink($"{treat.Name}", "Details", "Treats", new {id =
+      treat.TreatId})
+      </li>
+    }
+  </ul>
+</main>
 <p>@Html.ActionLink("See all treats", "Index", "Treats")</p>
 <p>@Html.ActionLink("See all flavors", "Index", "Flavors")</p>
 <p>@Html.ActionLink("Create an account", "Index", "Account")</p>
