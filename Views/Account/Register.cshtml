@@ -6,8 +6,10 @@
 
 @model RegisterViewModel
 
-<h2>Register a new user</h2>
-<hr />
+<h1>Register New Account</h1>
+<p>Create a new Sweet and Savory Explorer account to add, edit and delete
+  products</p>
+
 @using (Html.BeginForm("Register", "Account", FormMethod.Post))
 {
   @Html.LabelFor(user => user.Email)
@@ -19,5 +21,5 @@
   @Html.LabelFor(user=> user.ConfirmPassword)
   @Html.PasswordFor(user=> user.ConfirmPassword)
 
-  <input type="submit" value="Register" />
+  <input type="submit" value="Log In" />
 }

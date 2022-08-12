@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sweet and Savory Treats Explorer</title>
-    <link rel="stylesheet" href="~/css/styles.css">
-  </head>
-  <body>
-    @RenderBody()
-    @await Html.PartialAsync("Footer")
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sweet and Savory Treats Explorer</title>
+  <link rel="stylesheet" href="~/css/styles.css">
+</head>
+
+<body>
+  @await Html.PartialAsync("Header")
+  @RenderBody()
+  @await Html.PartialAsync("Footer")
+</body>
+
 </html>

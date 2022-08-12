@@ -4,11 +4,12 @@
 
 @model SweetAndSavoryExplorer.Models.Flavor
 
-<h4>Add a new task</h4>
+<h1>Add a New Flavor</h1>
+<p>Enter the name of the new flavor below to add it to the database.</p>
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)
-  <input type="submit" value="Add new category" />
+  <input type="submit" value="Add Flavor" />
 }
 <p>@Html.ActionLink("Show all flavors", "Index")</p>

@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+}
+
+header,
+main,
+section,
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header {
+  display: flex;
+}
+
+header > p {
+  margin-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  form {
+    width: 40%;
+  }
+}
+
+label {
+  margin-top: 0.5rem;
+}
+
+input[type='submit'] {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100px;
+}
+
+ul {
+  padding-left: 1rem;
+}
