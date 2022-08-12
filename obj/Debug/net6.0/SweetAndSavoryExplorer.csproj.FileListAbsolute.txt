@@ -1,0 +1,6 @@
+/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/obj/Debug/net6.0/SweetAndSavoryExplorer.csproj.AssemblyReference.cache
+/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/obj/Debug/net6.0/SweetAndSavoryExplorer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/obj/Debug/net6.0/SweetAndSavoryExplorer.AssemblyInfoInputs.cache
+/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/obj/Debug/net6.0/SweetAndSavoryExplorer.AssemblyInfo.cs
+/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/obj/Debug/net6.0/SweetAndSavoryExplorer.csproj.CoreCompileInputs.cache
+/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/obj/Debug/net6.0/SweetAndSavoryExplorer.MvcApplicationPartsAssemblyInfo.cache

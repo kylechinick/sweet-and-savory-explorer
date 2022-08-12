@@ -16296,6 +16296,97 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "SweetAndSavoryExplorer",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Details.cshtml",
+      "TargetPath": "Views\\Items\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Index.cshtml",
+      "TargetPath": "Views\\Items\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Edit.cshtml",
+      "TargetPath": "Views\\Items\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Account/Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Delete.cshtml",
+      "TargetPath": "Views\\Categories\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Index.cshtml",
+      "TargetPath": "Views\\Categories\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/DeleteAll.cshtml",
+      "TargetPath": "Views\\Items\\DeleteAll.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Account/Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Shared/Footer.cshtml",
+      "TargetPath": "Views\\Shared\\Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Create.cshtml",
+      "TargetPath": "Views\\Items\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Delete.cshtml",
+      "TargetPath": "Views\\Items\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Create.cshtml",
+      "TargetPath": "Views\\Categories\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Account/Index.cshtml",
+      "TargetPath": "Views\\Account\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Edit.cshtml",
+      "TargetPath": "Views\\Categories\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/AddCategory.cshtml",
+      "TargetPath": "Views\\Categories\\AddCategory.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Details.cshtml",
+      "TargetPath": "Views\\Categories\\Details.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
