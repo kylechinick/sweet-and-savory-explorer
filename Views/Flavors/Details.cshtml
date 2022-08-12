@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-@model ToDoList.Models.Flavor;
+@model SweetAndSavoryExplorer.Models.Flavor;
 
 <h2>Flavor Details</h2>
 <hr />
@@ -19,7 +19,7 @@ else
   <ul>
   @foreach (var join in Model.JoinEntities)
     {
-      <li>@join.Treat.Description</li>
+      <li>@join.Treat.Name</li>
     }
   </ul>
 }
