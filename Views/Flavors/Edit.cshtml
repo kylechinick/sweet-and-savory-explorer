@@ -4,9 +4,9 @@
 
 @model SweetAndSavoryExplorer.Models.Flavor
 
-<h2>Edit</h2>
+<h1>Edit Flavor</h1>
 
-<h4>Edit this category: @Html.DisplayFor(model => model.Name)</h4>
+<h2>Edit the @Html.DisplayFor(model => model.Name) flavor below.</h2>
 
 @using (Html.BeginForm())
 {
@@ -17,4 +17,4 @@
 
   <input type="submit" value="Save" />
 }
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Back to flavor list", "Index")</p>
