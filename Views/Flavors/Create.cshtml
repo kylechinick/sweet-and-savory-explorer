@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-@model ToDoList.Models.Category
+@model ToDoList.Models.Flavor
 
 <h4>Add a new task</h4>
 @using (Html.BeginForm())
@@ -11,4 +11,4 @@
   @Html.TextBoxFor(model => model.Name)
   <input type="submit" value="Add new category" />
 }
-<p>@Html.ActionLink("Show all categories", "Index")</p>
+<p>@Html.ActionLink("Show all flavors", "Index")</p>

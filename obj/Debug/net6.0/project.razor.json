@@ -4147,9 +4147,9 @@
       {
         "HashCode": -1409179337,
         "Kind": "Components.Component",
-        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
+        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
-        "Documentation": "\n            <summary>\n            Provides functionality for rendering a virtualized list of items.\n            </summary>\n            <typeparam name=\"TItem\">The <c>context</c> type for the items being rendered.</typeparam>\n        ",
+        "Documentation": "\n            <summary>\n            Provides functionality for rendering a virtualized list of treats.\n            </summary>\n            <typeparam name=\"TTreat\">The <c>context</c> type for the treats being rendered.</typeparam>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -4159,11 +4159,11 @@
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "TItem",
+            "Name": "TTreat",
             "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TItem for the Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem> component.",
+            "Documentation": "Specifies the type of the type parameter TTreat for the Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat> component.",
             "Metadata": {
-              "Common.PropertyName": "TItem",
+              "Common.PropertyName": "TTreat",
               "Components.TypeParameter": "True",
               "Components.TypeParameterIsCascading": "False"
             }
@@ -4171,8 +4171,8 @@
           {
             "Kind": "Components.Component",
             "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
-            "Documentation": "\n            <summary>\n            Gets or sets the item template for the list.\n            </summary>\n        ",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TTreat>",
+            "Documentation": "\n            <summary>\n            Gets or sets the treat template for the list.\n            </summary>\n        ",
             "Metadata": {
               "Common.PropertyName": "ChildContent",
               "Components.ChildContent": "True",
@@ -4181,11 +4181,11 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "ItemContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
-            "Documentation": "\n            <summary>\n            Gets or sets the item template for the list.\n            </summary>\n        ",
+            "Name": "TreatContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TTreat>",
+            "Documentation": "\n            <summary>\n            Gets or sets the treat template for the list.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "ItemContent",
+              "Common.PropertyName": "TreatContent",
               "Components.ChildContent": "True",
               "Components.GenericTyped": "True"
             }
@@ -4194,7 +4194,7 @@
             "Kind": "Components.Component",
             "Name": "Placeholder",
             "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext>",
-            "Documentation": "\n            <summary>\n            Gets or sets the template for items that have not yet been loaded in memory.\n            </summary>\n        ",
+            "Documentation": "\n            <summary>\n            Gets or sets the template for treats that have not yet been loaded in memory.\n            </summary>\n        ",
             "Metadata": {
               "Common.PropertyName": "Placeholder",
               "Components.ChildContent": "True"
@@ -4202,31 +4202,31 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "ItemSize",
+            "Name": "TreatSize",
             "TypeName": "System.Single",
-            "Documentation": "\n            <summary>\n            Gets the size of each item in pixels. Defaults to 50px.\n            </summary>\n        ",
+            "Documentation": "\n            <summary>\n            Gets the size of each treat in pixels. Defaults to 50px.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "ItemSize"
+              "Common.PropertyName": "TreatSize"
             }
           },
           {
             "Kind": "Components.Component",
-            "Name": "ItemsProvider",
-            "TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate<TItem>",
-            "Documentation": "\n            <summary>\n            Gets or sets the function providing items to the list.\n            </summary>\n        ",
+            "Name": "TreatsProvider",
+            "TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.TreatsProviderDelegate<TTreat>",
+            "Documentation": "\n            <summary>\n            Gets or sets the function providing treats to the list.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "ItemsProvider",
+              "Common.PropertyName": "TreatsProvider",
               "Components.DelegateSignature": "True",
               "Components.GenericTyped": "True"
             }
           },
           {
             "Kind": "Components.Component",
-            "Name": "Items",
-            "TypeName": "System.Collections.Generic.ICollection<TItem>",
-            "Documentation": "\n            <summary>\n            Gets or sets the fixed item source.\n            </summary>\n        ",
+            "Name": "Treats",
+            "TypeName": "System.Collections.Generic.ICollection<TTreat>",
+            "Documentation": "\n            <summary>\n            Gets or sets the fixed treat source.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "Items",
+              "Common.PropertyName": "Treats",
               "Components.GenericTyped": "True"
             }
           },
@@ -4234,7 +4234,7 @@
             "Kind": "Components.Component",
             "Name": "OverscanCount",
             "TypeName": "System.Int32",
-            "Documentation": "\n            <summary>\n            Gets or sets a value that determines how many additional items will be rendered\n            before and after the visible region. This help to reduce the frequency of rendering\n            during scrolling. However, higher values mean that more elements will be present\n            in the page.\n            </summary>\n        ",
+            "Documentation": "\n            <summary>\n            Gets or sets a value that determines how many additional treats will be rendered\n            before and after the visible region. This help to reduce the frequency of rendering\n            during scrolling. However, higher values mean that more elements will be present\n            in the page.\n            </summary>\n        ",
             "Metadata": {
               "Common.PropertyName": "OverscanCount"
             }
@@ -4252,16 +4252,16 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>",
           "Components.GenericTyped": "True"
         }
       },
       {
         "HashCode": -1466918058,
         "Kind": "Components.Component",
-        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
+        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
-        "Documentation": "\n            <summary>\n            Provides functionality for rendering a virtualized list of items.\n            </summary>\n            <typeparam name=\"TItem\">The <c>context</c> type for the items being rendered.</typeparam>\n        ",
+        "Documentation": "\n            <summary>\n            Provides functionality for rendering a virtualized list of treats.\n            </summary>\n            <typeparam name=\"TTreat\">The <c>context</c> type for the treats being rendered.</typeparam>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -4271,11 +4271,11 @@
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "TItem",
+            "Name": "TTreat",
             "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TItem for the Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem> component.",
+            "Documentation": "Specifies the type of the type parameter TTreat for the Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat> component.",
             "Metadata": {
-              "Common.PropertyName": "TItem",
+              "Common.PropertyName": "TTreat",
               "Components.TypeParameter": "True",
               "Components.TypeParameterIsCascading": "False"
             }
@@ -4283,8 +4283,8 @@
           {
             "Kind": "Components.Component",
             "Name": "ChildContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
-            "Documentation": "\n            <summary>\n            Gets or sets the item template for the list.\n            </summary>\n        ",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TTreat>",
+            "Documentation": "\n            <summary>\n            Gets or sets the treat template for the list.\n            </summary>\n        ",
             "Metadata": {
               "Common.PropertyName": "ChildContent",
               "Components.ChildContent": "True",
@@ -4293,11 +4293,11 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "ItemContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
-            "Documentation": "\n            <summary>\n            Gets or sets the item template for the list.\n            </summary>\n        ",
+            "Name": "TreatContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TTreat>",
+            "Documentation": "\n            <summary>\n            Gets or sets the treat template for the list.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "ItemContent",
+              "Common.PropertyName": "TreatContent",
               "Components.ChildContent": "True",
               "Components.GenericTyped": "True"
             }
@@ -4306,7 +4306,7 @@
             "Kind": "Components.Component",
             "Name": "Placeholder",
             "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext>",
-            "Documentation": "\n            <summary>\n            Gets or sets the template for items that have not yet been loaded in memory.\n            </summary>\n        ",
+            "Documentation": "\n            <summary>\n            Gets or sets the template for treats that have not yet been loaded in memory.\n            </summary>\n        ",
             "Metadata": {
               "Common.PropertyName": "Placeholder",
               "Components.ChildContent": "True"
@@ -4314,31 +4314,31 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "ItemSize",
+            "Name": "TreatSize",
             "TypeName": "System.Single",
-            "Documentation": "\n            <summary>\n            Gets the size of each item in pixels. Defaults to 50px.\n            </summary>\n        ",
+            "Documentation": "\n            <summary>\n            Gets the size of each treat in pixels. Defaults to 50px.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "ItemSize"
+              "Common.PropertyName": "TreatSize"
             }
           },
           {
             "Kind": "Components.Component",
-            "Name": "ItemsProvider",
-            "TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate<TItem>",
-            "Documentation": "\n            <summary>\n            Gets or sets the function providing items to the list.\n            </summary>\n        ",
+            "Name": "TreatsProvider",
+            "TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.TreatsProviderDelegate<TTreat>",
+            "Documentation": "\n            <summary>\n            Gets or sets the function providing treats to the list.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "ItemsProvider",
+              "Common.PropertyName": "TreatsProvider",
               "Components.DelegateSignature": "True",
               "Components.GenericTyped": "True"
             }
           },
           {
             "Kind": "Components.Component",
-            "Name": "Items",
-            "TypeName": "System.Collections.Generic.ICollection<TItem>",
-            "Documentation": "\n            <summary>\n            Gets or sets the fixed item source.\n            </summary>\n        ",
+            "Name": "Treats",
+            "TypeName": "System.Collections.Generic.ICollection<TTreat>",
+            "Documentation": "\n            <summary>\n            Gets or sets the fixed treat source.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "Items",
+              "Common.PropertyName": "Treats",
               "Components.GenericTyped": "True"
             }
           },
@@ -4346,7 +4346,7 @@
             "Kind": "Components.Component",
             "Name": "OverscanCount",
             "TypeName": "System.Int32",
-            "Documentation": "\n            <summary>\n            Gets or sets a value that determines how many additional items will be rendered\n            before and after the visible region. This help to reduce the frequency of rendering\n            during scrolling. However, higher values mean that more elements will be present\n            in the page.\n            </summary>\n        ",
+            "Documentation": "\n            <summary>\n            Gets or sets a value that determines how many additional treats will be rendered\n            before and after the visible region. This help to reduce the frequency of rendering\n            during scrolling. However, higher values mean that more elements will be present\n            in the page.\n            </summary>\n        ",
             "Metadata": {
               "Common.PropertyName": "OverscanCount"
             }
@@ -4364,7 +4364,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>",
           "Components.GenericTyped": "True",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -4372,9 +4372,9 @@
       {
         "HashCode": -80136384,
         "Kind": "Components.ChildContent",
-        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
+        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
-        "Documentation": "\n            <summary>\n            Gets or sets the item template for the list.\n            </summary>\n        ",
+        "Documentation": "\n            <summary>\n            Gets or sets the treat template for the list.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -4396,16 +4396,16 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
         "HashCode": 645001219,
         "Kind": "Components.ChildContent",
-        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
+        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
-        "Documentation": "\n            <summary>\n            Gets or sets the item template for the list.\n            </summary>\n        ",
+        "Documentation": "\n            <summary>\n            Gets or sets the treat template for the list.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -4427,7 +4427,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -4435,13 +4435,13 @@
       {
         "HashCode": 1508856971,
         "Kind": "Components.ChildContent",
-        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
+        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.TreatContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
-        "Documentation": "\n            <summary>\n            Gets or sets the item template for the list.\n            </summary>\n        ",
+        "Documentation": "\n            <summary>\n            Gets or sets the treat template for the list.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ItemContent",
+            "TagName": "TreatContent",
             "ParentTag": "Virtualize"
           }
         ],
@@ -4450,7 +4450,7 @@
             "Kind": "Components.ChildContent",
             "Name": "Context",
             "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'ItemContent' child content expression.",
+            "Documentation": "Specifies the parameter name for the 'TreatContent' child content expression.",
             "Metadata": {
               "Components.ChildContentParameterName": "True",
               "Common.PropertyName": "Context"
@@ -4459,20 +4459,20 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.TreatContent",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
         "HashCode": 153812951,
         "Kind": "Components.ChildContent",
-        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
+        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.TreatContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
-        "Documentation": "\n            <summary>\n            Gets or sets the item template for the list.\n            </summary>\n        ",
+        "Documentation": "\n            <summary>\n            Gets or sets the treat template for the list.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ItemContent",
+            "TagName": "TreatContent",
             "ParentTag": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize"
           }
         ],
@@ -4481,7 +4481,7 @@
             "Kind": "Components.ChildContent",
             "Name": "Context",
             "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'ItemContent' child content expression.",
+            "Documentation": "Specifies the parameter name for the 'TreatContent' child content expression.",
             "Metadata": {
               "Components.ChildContentParameterName": "True",
               "Common.PropertyName": "Context"
@@ -4490,7 +4490,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.TreatContent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -4498,9 +4498,9 @@
       {
         "HashCode": -1243321575,
         "Kind": "Components.ChildContent",
-        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
+        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.Placeholder",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
-        "Documentation": "\n            <summary>\n            Gets or sets the template for items that have not yet been loaded in memory.\n            </summary>\n        ",
+        "Documentation": "\n            <summary>\n            Gets or sets the template for treats that have not yet been loaded in memory.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -4522,16 +4522,16 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.Placeholder",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
         "HashCode": -688767184,
         "Kind": "Components.ChildContent",
-        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
+        "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.Placeholder",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
-        "Documentation": "\n            <summary>\n            Gets or sets the template for items that have not yet been loaded in memory.\n            </summary>\n        ",
+        "Documentation": "\n            <summary>\n            Gets or sets the template for treats that have not yet been loaded in memory.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -4553,7 +4553,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TTreat>.Placeholder",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -12061,7 +12061,7 @@
             "TagName": "*",
             "Attributes": [
               {
-                "Name": "itemid",
+                "Name": "treatid",
                 "Value": "~/",
                 "ValueComparison": 2
               }
@@ -12256,7 +12256,7 @@
             ]
           },
           {
-            "TagName": "menuitem",
+            "TagName": "menutreat",
             "Attributes": [
               {
                 "Name": "icon",
@@ -12577,8 +12577,8 @@
           {
             "Kind": "ITagHelper",
             "Name": "priority",
-            "TypeName": "Microsoft.Extensions.Caching.Memory.CacheItemPriority?",
-            "Documentation": "\n            <summary>\n            Gets or sets the <see cref=\"T:Microsoft.Extensions.Caching.Memory.CacheItemPriority\" /> policy for the cache entry.\n            </summary>\n        ",
+            "TypeName": "Microsoft.Extensions.Caching.Memory.CacheTreatPriority?",
+            "Documentation": "\n            <summary>\n            Gets or sets the <see cref=\"T:Microsoft.Extensions.Caching.Memory.CacheTreatPriority\" /> policy for the cache entry.\n            </summary>\n        ",
             "Metadata": {
               "Common.PropertyName": "Priority"
             }
@@ -14081,7 +14081,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;select&gt; elements with <c>asp-for</c> and/or\n            <c>asp-items</c> attribute(s).\n            </summary>\n        ",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;select&gt; elements with <c>asp-for</c> and/or\n            <c>asp-treats</c> attribute(s).\n            </summary>\n        ",
         "CaseSensitive": false,
         "TagMatchingRules": [
           {
@@ -14096,7 +14096,7 @@
             "TagName": "select",
             "Attributes": [
               {
-                "Name": "asp-items"
+                "Name": "asp-treats"
               }
             ]
           }
@@ -14113,11 +14113,11 @@
           },
           {
             "Kind": "ITagHelper",
-            "Name": "asp-items",
-            "TypeName": "System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>",
-            "Documentation": "\n            <summary>\n            A collection of <see cref=\"T:Microsoft.AspNetCore.Mvc.Rendering.SelectListItem\" /> objects used to populate the &lt;select&gt; element with\n            &lt;optgroup&gt; and &lt;option&gt; elements.\n            </summary>\n        ",
+            "Name": "asp-treats",
+            "TypeName": "System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListTreat>",
+            "Documentation": "\n            <summary>\n            A collection of <see cref=\"T:Microsoft.AspNetCore.Mvc.Rendering.SelectListTreat\" /> objects used to populate the &lt;select&gt; element with\n            &lt;optgroup&gt; and &lt;option&gt; elements.\n            </summary>\n        ",
             "Metadata": {
-              "Common.PropertyName": "Items"
+              "Common.PropertyName": "Treats"
             }
           },
           {
@@ -16298,18 +16298,18 @@
   "RootNamespace": "SweetAndSavoryExplorer",
   "Documents": [
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Details.cshtml",
-      "TargetPath": "Views\\Items\\Details.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Details.cshtml",
+      "TargetPath": "Views\\Treats\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Index.cshtml",
-      "TargetPath": "Views\\Items\\Index.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Index.cshtml",
+      "TargetPath": "Views\\Treats\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Edit.cshtml",
-      "TargetPath": "Views\\Items\\Edit.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Edit.cshtml",
+      "TargetPath": "Views\\Treats\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16318,18 +16318,23 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Delete.cshtml",
-      "TargetPath": "Views\\Categories\\Delete.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Flavors/Edit.cshtml",
+      "TargetPath": "Views\\Flavors\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Index.cshtml",
-      "TargetPath": "Views\\Categories\\Index.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Flavors/AddFlavor.cshtml",
+      "TargetPath": "Views\\Flavors\\AddFlavor.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/DeleteAll.cshtml",
-      "TargetPath": "Views\\Items\\DeleteAll.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Flavors/Details.cshtml",
+      "TargetPath": "Views\\Flavors\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/DeleteAll.cshtml",
+      "TargetPath": "Views\\Treats\\DeleteAll.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16353,18 +16358,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Create.cshtml",
-      "TargetPath": "Views\\Items\\Create.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Flavors/Create.cshtml",
+      "TargetPath": "Views\\Flavors\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Items/Delete.cshtml",
-      "TargetPath": "Views\\Items\\Delete.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Create.cshtml",
+      "TargetPath": "Views\\Treats\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Create.cshtml",
-      "TargetPath": "Views\\Categories\\Create.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Treats/Delete.cshtml",
+      "TargetPath": "Views\\Treats\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16373,18 +16378,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Edit.cshtml",
-      "TargetPath": "Views\\Categories\\Edit.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Flavors/Index.cshtml",
+      "TargetPath": "Views\\Flavors\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/AddCategory.cshtml",
-      "TargetPath": "Views\\Categories\\AddCategory.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Categories/Details.cshtml",
-      "TargetPath": "Views\\Categories\\Details.cshtml",
+      "FilePath": "/Users/kylechinick/Documents/Development/projects/educational/epicodus/_code_review/SweetAndSavoryExplorer/Views/Flavors/Delete.cshtml",
+      "TargetPath": "Views\\Flavors\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],

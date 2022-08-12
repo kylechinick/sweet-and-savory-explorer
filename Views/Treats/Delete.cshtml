@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+@model ToDoList.Models.Treat
+
+<h2>Are you sure you want to delete this?</h2>
+
+@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model =>
+model.Description)
+@using (Html.BeginForm())
+{
+  <input type="submit" value="Delete" />
+}
+<ul>
+  @foreach (var join in Model.JoinEntities)
+  {
+    <li>@join.Flavor.Name</li>
+    @using (Html.BeginForm("DeleteFlavor", "Treats"))
+    {
+      @Html.Hidden("joinId", @join.FlavorTreatId)
+      <input type="submit" value="Delete" />
+    }
+  }
+</ul>
+@Html.ActionLink("Back to List", "Index")
