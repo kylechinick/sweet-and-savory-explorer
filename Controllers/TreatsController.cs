@@ -94,7 +94,7 @@ namespace SweetAndSavoryExplorer.Controllers
     {
       if (TreatId != 0)
       {
-        _db.TreatTreat.Add(new TreatTreat() { TreatId = TreatId, TreatId = treat.TreatId });
+        _db.FlavorTreat.Add(new FlavorTreat() { TreatId = TreatId, TreatId = treat.TreatId });
         _db.SaveChanges();
       }
       return RedirectToAction("Index");
@@ -102,8 +102,8 @@ namespace SweetAndSavoryExplorer.Controllers
     [HttpPost]
     public ActionResult DeleteTreat(int joinId)
     {
-      var joinEntry = _db.TreatTreat.FirstOrDefault(entry => entry.TreatTreatId == joinId);
-      _db.TreatTreat.Remove(joinEntry);
+      var joinEntry = _db.FlavorTreat.FirstOrDefault(entry => entry.FlavorTreatId == joinId);
+      _db.FlavorTreat.Remove(joinEntry);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
