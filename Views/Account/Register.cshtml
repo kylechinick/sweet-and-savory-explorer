@@ -3,23 +3,23 @@
 }
 
 @using SweetAndSavoryExplorer.ViewModels
-
 @model RegisterViewModel
 
-<h1>Register New Account</h1>
-<p>Create a new Sweet and Savory Explorer account to add, edit and delete
-  products</p>
-
-@using (Html.BeginForm("Register", "Account", FormMethod.Post))
-{
-  @Html.LabelFor(user => user.Email)
-  @Html.TextBoxFor(user=> user.Email)
-
-  @Html.LabelFor(user=> user.Password)
-  @Html.PasswordFor(user=> user.Password)
-
-  @Html.LabelFor(user=> user.ConfirmPassword)
-  @Html.PasswordFor(user=> user.ConfirmPassword)
-
-  <input type="submit" value="Log In" />
-}
+<section>
+  <h1>Create New Account</h1>
+  <p>Create a new Sweet and Savory Explorer account to add, edit and delete
+    products</p>
+</section>
+<main>
+  <h2>Register</h2>
+  @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+  {
+    @Html.LabelFor(user => user.Email)
+    @Html.TextBoxFor(user=> user.Email)
+    @Html.LabelFor(user=> user.Password)
+    @Html.PasswordFor(user=> user.Password)
+    @Html.LabelFor(user=> user.ConfirmPassword)
+    @Html.PasswordFor(user=> user.ConfirmPassword)
+    <input type="submit" value="Log In" />
+  }
+</main>

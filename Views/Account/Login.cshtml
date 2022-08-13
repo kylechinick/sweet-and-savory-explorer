@@ -3,18 +3,20 @@
 }
 
 @using SweetAndSavoryExplorer.ViewModels
-
 @model LoginViewModel
-<h1>Log In</h1>
-<p>Log in to add, edit and delete products</p>
 
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(m => m.Email)
-  @Html.TextBoxFor(m => m.Email)
-
-  @Html.LabelFor(m => m.Password)
-  @Html.PasswordFor(m => m.Password)
-
-  <input type="submit" value="Log in" class="btn btn-default" />
-}
+<section>
+  <h1>Account Login</h1>
+  <p>Log in to add, edit and delete products</p>
+</section>
+<main>
+  <h2>Log Into Your Account</h2>
+  @using (Html.BeginForm())
+  {
+    @Html.LabelFor(m => m.Email)
+    @Html.TextBoxFor(m => m.Email)
+    @Html.LabelFor(m => m.Password)
+    @Html.PasswordFor(m => m.Password)
+    <input type="submit" value="Log in" class="btn btn-default" />
+  }
+</main>
