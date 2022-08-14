@@ -33,7 +33,7 @@ After logging in users will also have the ability to add, edit, and delete recor
 
 2. Install each required package by running the following terminal commands:
 
-   ```dotnet
+   ```Shell
    dotnet tool install --global dotnet-ef --version 6.0.0
    dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
    dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
