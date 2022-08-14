@@ -35,10 +35,25 @@ After logging in users will also have the ability to add, edit, and delete recor
 
    ```Shell
    dotnet tool install --global dotnet-ef --version 6.0.0
+   ```
+
+   ```Shell
    dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+   ```
+
+   ```Shell
    dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+   ```
+
+   ```Shell
    dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 6.0.0
+   ```
+
+   ```Shell
    dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0
+   ```
+
+   ```Shell
    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 6.0.0
    ```
 
