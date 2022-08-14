@@ -8,50 +8,75 @@ Marketing app that showcases the flavors and treats of Pierre's Sweet and Savory
 
 ## Technologies Used
 
-- _C#_
-- _.NET 6.0_
-- _HTML / CSHTML / RAZOR / LINQ_
-- _Entity_
+- _C# / .NET 6.0_
+- _Entity Framework Core_
+- _Identity_
+- _CSHTML / RAZOR / LINQ_
 
 ---
 
 ## Description
 
-TBD
+This app is for demonstration purposes. The Sweet and Savory Explorer holds two types of product records and a many-to-many database setup to allow both product records to be associated with each other.
 
----
+Users can view a full list of all flavors and treats from the app's homepage. Users can also choose to view a full list of either flavors or treats alone as well as view details for a specific record.
+
+After logging in users will also have the ability to add, edit, and delete records from the app.
 
 ## Setup/Installation Requirements
 
-1. Clone this repository to your desktop by executing `git clone https://github.com/kylechinick/sweet-and-savory-explorer.git` in your preferred terminal application.
+1. Clone this repository to your desktop by running the following command in your preferred terminal application:
 
-2. In the terminal, cd into the `/SweetAndSavoryExplorer/` directory then execute the `dotnet restore` command to auto-populate the project with an `/obj/` directory and its required contents.
+   ```Shell
+   git clone https://github.com/kylechinick/sweet-and-savory-explorer.git
+   ```
 
-3. Ensure you have the following packages by running the following terminal commands for installing each:
-   `dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0`
-   `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0-alpha.2`
-   `dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 6.0.0`
+2. Install each required package by running the following terminal commands:
 
-4. Create an 'appsettings.json' file in the project root and populate it with the following content, taking care to update with your unique database configurations:
-   `{ "ConnectionStrings": { "DefaultConnection": "Server=localhost;Port=3306;database=sase-db;uid=root;pwd=[YOUR PASSWORD];" } }`
+   ```dotnet
+   dotnet tool install --global dotnet-ef --version 6.0.0
+   dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+   dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+   dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 6.0.0
+   dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0
+   dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 6.0.0
+   ```
 
-   - NOTE: [password] should be replaced by your password. Do not include square brackets in final configuration.
+3. In the terminal, `cd` into the _/SweetAndSavoryExplorer/_ directory then execute the `dotnet restore` command to auto-populate the project with an _/obj/_ directory.
 
-5. Execute `dotnet build` in the terminal to automatically create the required `/bin/` folder for the project.
+4. Create an _appsettings.json_ file in the project root and populate it with the following content, taking care to update with your unique database configurations:
 
-6. To build out a database with a code first approach ensure the following packages have been installed/updated on your machine via these terminal commands:
-   `dotnet tool update --global dotnet-ef --version 6.0.0`
-   `dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0`
+   ```JSON
+   {
+    "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=sase-db;uid=root;pwd=[YOUR PASSWORD];"
+    }
+   }
+   ```
 
-7. To create a record, or snapshot, of the current database run the following command:
+   - NOTE: _[password]_ should be replaced by your password. Do not include square brackets in the final configuration.
+
+5. Create a _.gitignore_ file in the project root and add the following items to be ignored:
+
+   ```plain text
+   */obj/
+   */bin/
+   */appsettings.json
+   ```
+
+6. Add, commit, and push the new _appsettings.json_ file on its own in order to prevent uploading the sensative info it contains to the public.
+
+7. Execute `dotnet build` in the terminal to automatically create the required _/bin/_ folder for the project.
+
+8. Create a migration of the current database:
    `dotnet ef migrations add Initial`
 
-   - NOTE: Repeat this command, after updating 'Initial' to whichever name best represents your new database snapshot, any time a change is made to the database.
-
-8. Run the following command to update your database to reflect the recent migration data:
+9. Update your database to reflect the recent migration data:
    `dotnet ef database update`
 
-9. To start and run the app execute `dotnet run` from the `/SweetAndSavoryExplorer/` directory or, optionally, `dotnet watch run` to start the app and cause it to rebuild and run after each saved change to the codebase.
+   - NOTE: Repeat this steps 6 and 7, after updating _'Initial'_ to whichever name best represents your new migration any time a change is made to the database in the future.
+
+10. To run the app execute `dotnet run` from the project directory or, optionally, `dotnet watch run` to start the app and cause it to rebuild and run after each saved change to the codebase.
 
 ## Known Bugs
 
