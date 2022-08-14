@@ -54,7 +54,7 @@ After logging in users will also have the ability to add, edit, and delete recor
    }
    ```
 
-   - NOTE: _[password]_ should be replaced by your password. Do not include square brackets in the final configuration.
+- NOTE: _[password]_ should be replaced by your password. Do not include square brackets in the final configuration.
 
 5. Create a _.gitignore_ file in the project root and add the following items to be ignored:
 
@@ -74,7 +74,7 @@ After logging in users will also have the ability to add, edit, and delete recor
 9. Update your database to reflect the recent migration data:
    `dotnet ef database update`
 
-   - NOTE: Repeat this steps 6 and 7, after updating _'Initial'_ to whichever name best represents your new migration any time a change is made to the database in the future.
+- NOTE: Repeat this steps 6 and 7, after updating _'Initial'_ to whichever name best represents your new migration any time a change is made to the database in the future.
 
 10. To run the app execute `dotnet run` from the project directory or, optionally, `dotnet watch run` to start the app and cause it to rebuild and run after each saved change to the codebase.
 
