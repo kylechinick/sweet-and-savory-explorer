@@ -3,13 +3,17 @@
 }
 
 @model SweetAndSavoryExplorer.Models.Flavor
-
-<h1>Add a New Flavor</h1>
-<p>Enter the name of the new flavor below to add it to the database.</p>
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  <input type="submit" value="Add Flavor" />
-}
-<p>@Html.ActionLink("Show all flavors", "Index")</p>
+<section>
+  <h1>Add a New Flavor</h1>
+  <p>Enter the name of the new flavor below to add it to the database.</p>
+</section>
+<main>
+  <h2>New Flavor</h2>
+  @using (Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+    <input type="submit" value="Add Flavor" />
+  }
+  <p>@Html.ActionLink("Show all flavors", "Index")</p>
+</main>

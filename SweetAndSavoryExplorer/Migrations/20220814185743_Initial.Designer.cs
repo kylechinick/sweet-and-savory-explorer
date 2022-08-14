@@ -11,14 +11,14 @@ using SweetAndSavoryExplorer.Models;
 namespace SweetAndSavoryExplorer.Migrations
 {
     [DbContext(typeof(SweetAndSavoryExplorerContext))]
-    [Migration("20220812212506_Initial")]
+    [Migration("20220814185743_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.0")
+                .HasAnnotation("ProductVersion", "6.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

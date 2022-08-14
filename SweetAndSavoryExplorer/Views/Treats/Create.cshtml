@@ -4,12 +4,17 @@
 
 @model SweetAndSavoryExplorer.Models.Treat
 
-<h4>Add a new treat</h4>
+<section>
+  <h1>Add a New Treat</h1>
+  <p>Enter the name of the new treat below to add it to the database.</p>
+</section>
+<main>
+  <h2>New Treat</h2>
 
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  <input type="submit" value="Add new treat" class="btn btn-success" />
-}
-<p>@Html.ActionLink("Show all treats", "Index")</p>
+  @using (Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+    <input type="submit" value="Add Treat" />
+  }
+  <p>@Html.ActionLink("Show all treats", "Index")</p>
